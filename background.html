@@ -1,0 +1,16 @@
+﻿<!DOCTYPE html>
+<html>
+<script>
+    var BG=this;
+    var callback=function(){
+        BG.message='テスト';//独自プロパティを付与
+        var notification = window.webkitNotifications.createHTMLNotification('images/kusoyosiki3.png',
+        'Title!!',
+            'Message!!');
+        notification.show();
+
+    }
+    setTimeout(callback, 500);
+
+</script>
+</html>
